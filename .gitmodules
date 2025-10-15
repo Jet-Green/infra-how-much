@@ -1,0 +1,6 @@
+[submodule "how-much"]
+	path = how-much
+	url = https://github.com/FIRETECHNO/how-much
+[submodule "how-much-backend"]
+	path = how-much-backend
+	url = https://github.com/FIRETECHNO/how-much-backend
