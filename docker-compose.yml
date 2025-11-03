@@ -6,7 +6,7 @@ services:
     container_name: nuxt-frontend
     restart: always
     ports:
-      - "3011:3000"
+      - "3011:3011"
     env_file:
       - .env.frontend
     depends_on:
@@ -19,7 +19,7 @@ services:
     container_name: nest-backend
     restart: always
     ports:
-      - "3037:4000"
+      - "3037:3037"
     env_file:
       - .env.backend
     depends_on:
