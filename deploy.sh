@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # === Настройки ===
-PROJECT_DIR="/path/to/infra-how-much"
+PROJECT_DIR=""
 LOG_FILE="$PROJECT_DIR/deploy.log"
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
