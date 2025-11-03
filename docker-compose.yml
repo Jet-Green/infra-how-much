@@ -3,7 +3,6 @@ version: "3.9"
 services:
   frontend:
     build: ./how-much
-    context: ./how-much
     dockerfile: Dockerfile
     container_name: nuxt-frontend
     restart: always
