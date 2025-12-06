@@ -36,9 +36,20 @@ services:
       - mongo_data:/data/db
     networks:
       - db
+  redis:
+    image: redis:7-alpine
+    container_name: how-much-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - db
 
 volumes:
   mongo_data:
+  redis_data:
 
 networks:
   web:
