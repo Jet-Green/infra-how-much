@@ -22,8 +22,11 @@ services:
       - "3037:3037"
     env_file:
       - .env.backend
+      - ./how-much-backend/src/telegram-bots/.env
+    command: ["npx", "pm2-runtime", "ecosystem.config.js"]
     depends_on:
       - mongo
+      - redis
     networks:
       - web
       - db
